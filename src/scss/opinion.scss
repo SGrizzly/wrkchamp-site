@@ -1,0 +1,115 @@
+.opinion {
+    background-color: $second-color;
+}
+.slide {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 72px;
+        padding-bottom: 81px;
+    }
+    &__img {
+        display: inline-block;
+    }
+    &__opinion {
+        display: inline-block;
+        color: $main-color;
+        margin-top: 72px;
+        max-width: 512px;
+        text-align: center;
+        font-size: to_rem(18px);
+    }
+    &__info {
+        display: inline-block;
+        color: $third-color;
+        margin: 31px 0 44px;
+        text-align: center;
+        line-height: 27px;
+        letter-spacing: 1px;
+    }
+}
+
+.slick-dots {
+    bottom: 65px !important;
+}
+.slick-dots li button::before {
+    color: $main-color !important;
+    opacity: 1 !important;
+    font-size: to_rem(10px) !important;
+}
+.slick-dots li.slick-active button::before {
+    color: $third-color !important;
+}
+.slick-prev {
+    left: 0 !important;
+}
+.slick-next {
+    right: 0 !important;
+}
+.slick-prev, .slick-next {
+    height: calc(100% + 1px) !important;
+    width: 100px !important;
+    z-index: 10 !important;
+
+    &:hover {
+        background-color: $main-color !important;
+
+        &:before {
+            color: $second-color;
+        }
+    }
+}
+.slick-prev::before, .slick-next::before {
+    font-family: $main-font !important;
+    font-size: to_rem(36px) !important;
+    opacity: 1 !important;
+}
+
+@media screen and (max-width: 700px) {
+    .slide__opinion {
+        width: calc(100% - 200px);
+    }
+}
+@media screen and (max-width: 500px) {
+    .slide__opinion {
+        width: 90%;
+    }
+    .slick-prev,
+    .slick-next {
+        display: none !important;
+    }
+    .slide__wrapper {
+        padding: 30px 0;
+    }
+    .slick-dots {
+        bottom: 30px !important;
+    }
+}
+@media screen and (max-width: 400px) {
+    .slick-slide img {
+        width: 80px;
+        height: 80px;
+    }
+    .slide__opinion {
+        margin-top: 25px;
+        font-size: to_rem(16px);
+    }
+    .slide__info {
+        margin-top: 21px;
+        line-height: 25px;
+        letter-spacing: 0;
+    }
+    .slick-dots li button::before {
+        font-size: to_rem(5px) !important;
+    }
+    .slick-dots {
+        bottom: 22px !important;
+    }
+    .slick-dots li {
+        margin: 0 !important;
+    }
+    .slide__wrapper {
+        padding-bottom: 19px;
+    }
+}

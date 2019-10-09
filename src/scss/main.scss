@@ -1,0 +1,77 @@
+@import "../vendor/custom_styleselect/custom_styleselect";
+@import "fonts";
+@import "variables";
+@import "functions";
+@import "head";
+@import "description";
+@import "projects";
+@import "opinion";
+@import "section_form";
+@import "footer";
+
+body {
+    margin: 0;
+    font-family: $main-font;
+    font-size: $base-font-size;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+.content {
+    max-width: 1440px;
+    padding-left: 100px;
+    padding-right: 100px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (max-width: 950px) {
+    .content {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+.arrow {
+    &_down {
+        &:before {
+            content: "↓";
+        }
+    }
+    &_left {
+        &:before {
+            content: "←"
+        }
+    }
+    &_right {
+        &:before {
+            content: "→"
+        }
+    }
+    &:before {
+        display: block;
+    }
+}
+.title {
+    font-size: to_rem(36px);
+    font-family: $second-font;
+    margin-bottom: to_rem(21px);
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 500px) {
+    .title {
+        font-size: to_rem(18px);
+        margin-bottom: to_rem(20px);
+    }
+}
+@media screen and (max-width: 400px) {
+    .title {
+        line-height: 1.2;
+    }
+}

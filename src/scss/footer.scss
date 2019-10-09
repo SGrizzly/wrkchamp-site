@@ -1,0 +1,30 @@
+.footer {
+    margin-top: 72px;
+    padding-bottom: 45px;
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        display: inline-block;
+        width: 97px;
+        height: 41px;
+        background-image: url("../img/logo_grayscale.svg");
+        background-size: contain;
+        background-position: 50%;
+    }
+    &__text {
+        font-size: to_rem(14px);
+        color: $second-color;
+        opacity: .5;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer {
+        margin-top: 60px;
+    }
+}
