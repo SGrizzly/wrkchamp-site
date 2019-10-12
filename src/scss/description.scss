@@ -1,0 +1,29 @@
+.description {
+    padding-top: 63px;
+    padding-bottom: 73px;
+
+    &__text {
+        font-size: to_rem(18px);
+        font-family: $regular-font;
+        max-width: 824px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .description {
+        padding: 30px 0 28px;
+    }
+    .description__text {
+        font-size: to_rem(16px);
+    }
+    .description__text div,
+    .description__text span {
+        display: block;
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .description__text div, .description__text span {
+        margin-top: 20px;
+    }
+}

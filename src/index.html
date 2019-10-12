@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./scss/main.scss">
+</head>
+<body>
+    <section class="head">
+        <div class="content">
+            <header class="header">
+                <div class="logo"></div>
+                <nav class="nav">
+                    <ul class="nav__container">
+                        <li class="nav__item"><a href="#projects" class="nav__link">projects</a></li>
+                        <li class="nav__item"><a href="#opinion" class="nav__link">about</a></li>
+                        <li class="nav__item"><a href="#contacts" class="nav__link">contacts</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="head__title head__title_indent-top">ux/ui research</div>
+            <div class="head__title">and web development<span class="head__title_green">.</span></div>
+            <div class="head__subtitle">— do even more</div>
+            <div class="arrow arrow_down head__arrow"></div>
+        </div>
+    </section>
+
+    <section class="description">
+        <div class="content">
+            <div class="title">Unique design and outsource web development</div>
+            <div class="description__text">We use Sketch, Figma, Principle, Zeplin, Axure and Invision for design and prototypes, Ruby on Rails, Go, Node, Vue, React, Gitlab CI/CD and more for development and releases.<div>Wrkchamp is an expert outsourcing team of designers, developers and consultants.</div></div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects" style="max-width: 1440px; margin: 0 auto;">
+        <div class="projects__item projects__item_large">
+            <img class="projects__img" src="./img/city.jpg" alt="city" srcset="./img/city-2x.jpg 2x">
+            <div class="projects__item-description"><span>Project name</span></div>
+        </div>
+        <div class="projects__item">
+            <img class="projects__img" src="./img/mist.jpg" alt="mist" srcset="./img/mist-2x.jpg 2x">
+            <div class="projects__item-description"><span>Project name</span></div>
+        </div>
+        <div class="projects__item">
+            <img class="projects__img" src="./img/berries.jpg" alt="berries" srcset="./img/berries-2x.jpg 2x">
+            <div class="projects__item-description"><span>Project name</span></div>
+        </div>
+        <div class="projects__item">
+            <img class="projects__img" src="./img/bucket.jpg" alt="bucket" srcset="./img/bucket-2x.jpg 2x">
+            <div class="projects__item-description"><span>Project name</span></div>
+        </div>
+        <div class="projects__item projects__item_large">
+            <img class="projects__img" src="./img/waterfall.jpg" alt="waterfall" srcset="./img/waterfall-2x.jpg 2x">
+            <div class="projects__item-description"><span>Project name</span></div>
+        </div>
+        <div class="projects__item projects__item_fill">
+            <a href="#contacts" class="projects__link">
+                <span>+<br>add<br>work</span>
+            </a>
+        </div>
+    </section>
+
+
+    <section class="description">
+        <div class="content">
+            <div class="title">UX consulting</div>
+            <div class="description__text">We specialize in user experience research and conversion growth. Activation and retention it is primary metrics for any products. <span>We can review your product and make some recomendations for conversion’s improve.</span></div>
+        </div>
+    </section>
+
+    <section id="opinion" class="opinion">
+        <ul class="slider">
+            <li class="slide">
+                <div class="slide__wrapper">
+                    <div class="slide__img">
+                        <img src="./img/opinion.png" alt="avatar" srcset="./img/opinion-2x.png 2x">
+                    </div>
+                    <div class="slide__opinion">«We specialize in user experience research and conversion growth. Activation and retention it is primary metrics for any products.»</div>
+                    <div class="slide__info">wildberries.ru<br>art-director</div>
+                </div>
+            </li>
+            <li class="slide">
+                <div class="slide__wrapper">
+                    <div class="slide__img">
+                        <img src="./img/opinion.png" alt="avatar" srcset="./img/opinion-2x.png 2x">
+                    </div>
+                    <div class="slide__opinion">«We specialize in user experience research and conversion growth. Activation and retention it is primary metrics for any products.»</div>
+                    <div class="slide__info">wildberries.ru<br>art-director</div>
+                </div>
+            </li>
+            <li class="slide">
+                <div class="slide__wrapper">
+                    <div class="slide__img">
+                        <img src="./img/opinion.png" alt="avatar" srcset="./img/opinion-2x.png 2x">
+                    </div>
+                    <div class="slide__opinion">«We specialize in user experience research and conversion growth. Activation and retention it is primary metrics for any products.»</div>
+                    <div class="slide__info">wildberries.ru<br>art-director</div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section id="contacts" class="section-form">
+        <div class="content">
+            <div class="title">Hire us</div>
+                <div class="section-form__info">
+                    <form class="section-form__form" action="#">
+                        <div class="section-form__row">
+                            <label class="section-form__input section-form__input_name">
+                                <input type="text">
+                            </label>
+                            <label class="section-form__input section-form__input_email">
+                                <input type="text">
+                            </label>
+                        </div>
+
+                        <div class="section-form__row section-form__row_top">
+                            <select class="section-form__budget" name="Budget">
+                                <option value="">Budget</option>
+                                <option value="Up to €1000">Up to €1000</option>
+                                <option value="Up to €2000">Up to €2000</option>
+                                <option value="Up to €5000">Up to €5000</option>
+                                <option value="More than €5000">More than €5000</option>
+                                <option value="Not defined">Not defined</option>
+                            </select>
+            
+                            <select class="section-form__position" name="Position">
+                                <option value="">Position</option>
+                                <option value="C-level Executive">C-level Executive</option>
+                                <option value="Executive">Executive</option>
+                                <option value="Investor">Investor</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="section-form__textarea-wrapper">
+                            <textarea class="section-form__textarea" name="" id="" cols="30" rows="1"></textarea>
+                        </div>
+
+                        <button class="section-form__submit" type="submit">Send message</button>
+                    </form>
+                    <div class="section-form__email">or send us an email:<br><a href="mainto:mail@wrkchamp.com"><span>mail@wrkchamp.com</span></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="content">
+            <div class="footer__logo"></div>
+            <div class="footer__text">— do even more</div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
