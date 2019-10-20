@@ -47,4 +47,24 @@ $(() => {
         const action = this.value ? "addClass" : "removeClass";
         $(".section-form__textarea-wrapper")[action]("section-form__textarea-wrapper_hide-placeholder")
     }
+
+    let form = $(".section-form__form");
+    form.on("submit", (e) => {
+        e.preventDefault();
+        $.ajax({
+            url: "https://formsubmit.co/ajax/mail@wrkchamp.com",
+            method: "POST",
+            data: {
+                name: $("[name='name']", form).val(),
+                email: $("[name='email']", form).val(),
+                budget: $("[name='budget']", form).val(),
+                position: $("[name='position']", form).val(),
+                message: $("[name='message']", form).val()
+            }
+        }).done(()=> {
+            alert("Message sended")
+        }).fail(() => {
+            alert("Error")
+        });
+    });
 });

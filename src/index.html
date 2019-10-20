@@ -109,15 +109,15 @@
                     <form class="section-form__form" action="#">
                         <div class="section-form__row">
                             <label class="section-form__input section-form__input_name">
-                                <input type="text">
+                                <input type="text" name="name">
                             </label>
                             <label class="section-form__input section-form__input_email">
-                                <input type="text">
+                                <input type="text" name="email">
                             </label>
                         </div>
 
                         <div class="section-form__row section-form__row_top">
-                            <select class="section-form__budget" name="Budget">
+                            <select class="section-form__budget" name="budget">
                                 <option value="">Budget</option>
                                 <option value="Up to €1000">Up to €1000</option>
                                 <option value="Up to €2000">Up to €2000</option>
@@ -126,7 +126,7 @@
                                 <option value="Not defined">Not defined</option>
                             </select>
 
-                            <select class="section-form__position" name="Position">
+                            <select class="section-form__position" name="position">
                                 <option value="">Position</option>
                                 <option value="C-level Executive">C-level Executive</option>
                                 <option value="Executive">Executive</option>
@@ -136,7 +136,7 @@
                         </div>
 
                         <div class="section-form__textarea-wrapper">
-                            <textarea class="section-form__textarea" name="" id="" cols="30" rows="1"></textarea>
+                            <textarea class="section-form__textarea" name="message" id="" cols="30" rows="1"></textarea>
                         </div>
 
                         <button class="section-form__submit" type="submit">Send message</button>
