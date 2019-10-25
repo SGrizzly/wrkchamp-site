@@ -14720,6 +14720,27 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     const action = this.value ? "addClass" : "removeClass";
     (0, _jquery.default)(".section-form__textarea-wrapper")[action]("section-form__textarea-wrapper_hide-placeholder");
   }
+
+  let form = (0, _jquery.default)(".section-form__form");
+  form.on("submit", e => {
+    e.preventDefault();
+
+    _jquery.default.ajax({
+      url: "https://formsubmit.co/ajax/mail@wrkchamp.com",
+      method: "POST",
+      data: {
+        name: (0, _jquery.default)("[name='name']", form).val(),
+        email: (0, _jquery.default)("[name='email']", form).val(),
+        budget: (0, _jquery.default)("[name='budget']", form).val(),
+        position: (0, _jquery.default)("[name='position']", form).val(),
+        message: (0, _jquery.default)("[name='message']", form).val()
+      }
+    }).done(() => {
+      alert("Message sended");
+    }).fail(() => {
+      alert("Error");
+    });
+  });
 });
 },{"jquery":"../node_modules/jquery/dist/jquery.js","slick-carousel":"../node_modules/slick-carousel/slick/slick.js","../../node_modules/slick-carousel/slick/slick.scss":"../node_modules/slick-carousel/slick/slick.scss","../../node_modules/slick-carousel/slick/slick-theme.scss":"../node_modules/slick-carousel/slick/slick-theme.scss","../vendor/custom_styleselect/custom_styleselect":"vendor/custom_styleselect/custom_styleselect.js","autosize":"../node_modules/autosize/dist/autosize.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -14749,7 +14770,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52892" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56817" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

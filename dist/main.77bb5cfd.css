@@ -255,6 +255,7 @@ select[data-ss-uuid] {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: left top;
 }
 .projects__link {
   display: flex;
